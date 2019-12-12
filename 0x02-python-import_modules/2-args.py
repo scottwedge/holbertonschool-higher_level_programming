@@ -5,7 +5,7 @@ if __name__ == "__main__":
     if count == 1:
         print("{:d} arguments.".format(count - 1))
     else:
-        if count== 2:
+        if count == 2:
             print("{:d} argument:".format(count - 1))
         else:
             print("{:d} arguments:".format(count - 1))
