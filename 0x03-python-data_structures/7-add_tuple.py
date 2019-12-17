@@ -1,10 +1,6 @@
 #!/bin/usr/python3
 def add_tuple(tuple_a=(), tuple_b=()):
-    tupleA = list(tuple_a)
-    tupleB = list(tuple_b)
-    tupleA.extend([0, 0])
-    tupleB.extend([0, 0])
-    sumA = tupleA[0] + tupleB[0]
-    sumB = tupleA[1] + tupleB[1]
-    finalTuple = (sumA, sumB)
-    return finalTuple
+    tuple_a = tuple_a + (0, 0)
+    tuple_b = tuple_b + (0, 0)
+    tup_c = (tuple_a[0] + tuple_b[0], tuple_a[1] + tuple_b[1])
+    return tup_c
