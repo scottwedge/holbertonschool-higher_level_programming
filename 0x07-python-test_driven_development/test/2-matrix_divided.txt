@@ -1,0 +1,52 @@
+======================
+
+Using ``2-matrix_divided``
+-------------------
+
+This is an example text file in reStructuredText format.  First import
+``matrix_divided`` from the ``example`` module:
+
+    >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+Now use it:
+
+    invalid matrix 
+
+    >>> matrix = "string"
+    >>> print(matrix_divided(matrix, 2))
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix = None
+    >>> print(matrix_divided(matrix, 3))
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix = []
+    >>> print(matrix_divided(matrix, 4))
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix = [
+    ...     [2, 3, 4],
+    ...     [3, 4, 5]
+    ... ]
+    >>> print(matrix_divided(matrix, "number"))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    >>> matrix = [
+    ...     [3, 2, 4, 5],
+    ...     [4, 2, 1]
+    ... ]
+    >>> print(matrix_divided(matrix, 3))
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+
+    >>> matrix = [
+    ...     [2, 3, 4],
+    ...     [3, 4, 5]
+    ... ]
+    >>> print(matrix_divided(matrix, 0))
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
