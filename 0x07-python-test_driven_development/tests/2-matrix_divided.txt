@@ -74,3 +74,15 @@ Now use it:
     >>> print(matrix_divided(matrix, 3))
     Traceback (most recent call last):
     TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> print(matrix_divided(matrix, None))
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    >>> matrix = [
+    ...     [1, 2, 3],
+    ...     [4, 5, 6]
+    ... ]
+    >>> print(matrix_divided(matrix, "not a number"))
+    Traceback (most recent call last):
+    TypeError: div must be a number
