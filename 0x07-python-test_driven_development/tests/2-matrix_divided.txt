@@ -57,3 +57,18 @@ Now use it:
     ... ]
     >>> print(matrix_divided(matrix, 3))
     [[0.67, 1.0, 1.33], [1.0, 1.33, 1.67]]
+
+    >>> matrix = [
+    ...     [2, 3, 4],
+    ...     [3, 4, 5]
+    ... ]
+    >>> print(matrix_divided(matrix, float("inf")))
+    [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+    >>> print(matrix_divided(None, float("inf")))
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> print(matrix_divided(matrix, None))
+    Traceback (most recent call last):
+    TypeError: div must be a number
