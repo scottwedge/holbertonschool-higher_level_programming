@@ -27,3 +27,8 @@ Now use it:
     >>> my_list = MyList([1, 2], [2, 3])
     Traceback (most recent call last):
     TypeError: list() takes at most 1 argument (2 given)
+
+    >>> my_list = MyList([1, "Test", 3])
+    >>> my_list.print_sorted()
+    Traceback (most recent call last):
+    TypeError: unorderable types: str() < int()
