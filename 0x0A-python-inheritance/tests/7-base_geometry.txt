@@ -1,0 +1,23 @@
+======================
+
+Using ``7-base_geometry.py``
+-------------------
+
+This is an example text file in reStructuredText format.  First import
+``BaseGeometry`` from the ``example`` module:
+
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+    >>> bg = BaseGeometry()
+    >>> type(bg)
+    <class '7-base_geometry.BaseGeometry'>
+
+Now use it:
+    
+
+    >>> bg = BaseGeometry(None)
+    Traceback (most recent call last):
+    TypeError: object() takes no parameters
+
+    >>> bg = BaseGeometry()
+    >>> print(bg.area)
+    <bound method BaseGeometry.area of <7-base_geometry.BaseGeometry object at ...>>
