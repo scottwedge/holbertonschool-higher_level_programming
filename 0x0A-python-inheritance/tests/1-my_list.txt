@@ -32,3 +32,17 @@ Now use it:
     >>> my_list.print_sorted()
     Traceback (most recent call last):
     TypeError: unorderable types: str() < int()
+
+    >>> my_list = MyList()
+    >>> my_list.append("Test")
+    >>> my_list.append("Case")
+    >>> print(my_list)
+    ['Test', 'Case']
+
+    >>> my_list.print_sorted()
+    ['Case', 'Test']
+
+    >>> my_list = MyList()
+    >>> my_list.print_sorted()
+    []
+    
