@@ -37,9 +37,9 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        """Set value	
-        Args:	
-            value (int): width of the rectangle	
+        """Set value
+        Args:
+            value (int): width of the rectangle
         """
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -49,9 +49,9 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        """Set value	
-        Args:	
-            value (int): height of the rectangle	
+        """Set value
+        Args:
+            value (int): height of the rectangle
         """
         if type(value) is not int:
             raise TypeError("height must be an integer")
@@ -61,9 +61,9 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        """Set value	
-        Args:	
-            value (int): x of the rectangle	
+        """Set value
+        Args:
+            value (int): x of the rectangle
         """
         if type(value) is not int:
             raise TypeError("x must be an integer")
@@ -73,9 +73,9 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-        """Set value	
-        Args:	
-            value (int): y of the rectangle	
+        """Set value
+        Args:
+            value (int): y of the rectangle
         """
         if type(value) is not int:
             raise TypeError("y must be an integer")
@@ -102,6 +102,7 @@ class Rectangle(Base):
         return string
 
     def update(self, *args, **kwargs):
+        """update"""
         for i, j in enumerate(args):
             if i == 0:
                 self.id = j
@@ -125,6 +126,7 @@ class Rectangle(Base):
             self.y = kwargs["y"]
 
     def to_dictionary(self):
+        """to_dictionary"""
         dic = {}
         dic["id"] = self.id
         dic["width"] = self.width

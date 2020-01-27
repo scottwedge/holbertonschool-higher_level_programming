@@ -30,6 +30,7 @@ class Square(Rectangle):
         return string
 
     def update(self, *args, **kwargs):
+        """ update test"""
         for i, j in enumerate(args):
             if i == 0:
                 self.id = j
@@ -49,6 +50,7 @@ class Square(Rectangle):
             self.y = kwargs["y"]
 
     def to_dictionary(self):
+        """ dictionary test"""
         dic = {}
         dic["id"] = self.id
         dic["size"] = self.size
