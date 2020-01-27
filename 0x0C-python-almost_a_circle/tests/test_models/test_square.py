@@ -8,7 +8,7 @@ import unittest
 
 
 class TestSquare(unittest.TestCase):
-    """unnittest"""
+    """unittest"""
 
 
 if __name__ == "__main__":

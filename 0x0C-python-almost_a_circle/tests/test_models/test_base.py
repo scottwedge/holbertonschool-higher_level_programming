@@ -7,7 +7,7 @@ import unittest
 
 
 class TestBase(unittest.TestCase):
-    """unnittest"""
+    """unittest"""
     @classmethod
     def setUpClass(cls):
         """Setup for testing"""

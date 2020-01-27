@@ -8,7 +8,7 @@ import unittest
 
 
 class TestRectangle(unittest.TestCase):
-    """unnittest"""
+    """unittest"""
 
     def SetUp(self):
         Base.Base__nb_objects = 0
