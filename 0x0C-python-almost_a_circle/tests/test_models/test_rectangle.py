@@ -10,6 +10,9 @@ import unittest
 class TestRectangle(unittest.TestCase):
     """unnittest"""
 
+    def SetUp(self):
+        Base.Base__nb_objects = 0
+
     def test_type(self):
         r1 = Rectangle(4, 8)
         self.assertTrue(type(r1), Rectangle)
