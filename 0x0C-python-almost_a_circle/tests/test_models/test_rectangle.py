@@ -13,9 +13,12 @@ class TestRectangle(unittest.TestCase):
     def SetUp(self):
         Base.Base__nb_objects = 0
 
-    def test_type(self):
-        r1 = Rectangle(4, 8)
-        self.assertTrue(type(r1), Rectangle)
+    def test_A_constructor(self):
+        with self.assertRaises(TypeError) as e:
+            r = Rectangle()
+            error = 'test'
+            print(str(e.exception))
+        self.assertEqual(str(e.exception), error)
 
 
 if __name__ == "__main__":
